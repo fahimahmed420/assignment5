@@ -1,11 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cmyk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+<body class="bg-slate-500">
+    <head class="">
+        <nav class="flex justify-between w-10/12 max-w-7xl mx-auto bg-[#FFFFFF] rounded-2xl my-6 p-6">
+            <div class="flex items-center gap-x-3">
+                <img src="assets/logo.png" alt="">
+                <h2 class="text-4xl">Dev<span class="font-extrabold">Board</span></h2>
+            </div>
+            <div class="flex items-center gap-x-7">
+                <div class="flex items-center gap-x-3">
+                    <img src="assets/checkbox.png" alt="">
+                    <h3 class="text-3xl font-bold">20</h3>
+                </div>
+                <button><img src="assets/theme-btn.png" alt=""></button>
+            </div>
+        </nav>
+    </head>
+    <main class="grid grid-cols-4 w-10/12 max-w-7xl mx-auto bg-[#FFFFFF] rounded-2xl">
+        <section class="col-span-3 p-6">
+            <div class="flex items-center gap-x-6">
+                <div class="flex bg-[#F4F7FF] p-5 rounded-xl gap-x-4">
+                    <img src="assets/checkbox.png" alt="">
+                    <div class="items-center">
+                        <p>Task Assigned</p>
+                        <h3 class="text-3xl font-bold">o5</h3>
+                    </div>
+                </div>
+                <div class="flex items-center gap-x-4 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl py-5 px-10">
+                    <img src="assets/board.png" alt="">
+                    <h2>Discover Something <br> New Today!</h2>
+                </div>
+                <div class="flex bg-[#F4F7FF] p-5 rounded-xl gap-x-4">
+                    <img src="assets/calender.png" alt="">
+                    <p id="date"></p>
+                </div>
+            </div>
+            <div>
+                <div class="bg-[#F4F7FF] p-6 rounded-2xl">
+                    <p class="text-[#00303C] py-4 px-2 bg-white rounded-3xl">ShopEase</p>
+                    <h3 class="text-2xl font-medium text-[#00303C]">Fix mobile Button Issue</h3>
+                    <p class="text-[#000000] bg-white rounded-3xl py-4 px-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly</p>
+                        <div class="flex">
+                            <div>
+                                <p>Deadline</p>
+                                <p class="font-medium">21 March 2025</p>
+                            </div>
+                            <Button>Complete</Button>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section class="p-6">
+            <div class="flex gap-x-4">
+                <img src="assets/activity.png" alt="">
+                <h3>Activity Log</h3>
+            </div>
+            <button>Clear History</button>
+            <div>
+                <p></p>
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+        const today = new Date();
+        const formatOfDate = today.toDateString();
+        document.getElementById("date").textContent = formatOfDate;
+    </script>
 </body>
 </html>
