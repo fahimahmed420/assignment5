@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cmyk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    .poppins{
+  font-family: "Poppins", sans-serif;
+}
+</style>
+</head>
+<body class="bg-slate-500 poppins h-screen">
+    <header class="pt-6">
+        <nav class="flex justify-between w-10/12  mx-auto bg-[#FFFFFF] rounded-2xl mb-6 p-6 shadow-xl">
+            <div class="flex items-center gap-x-3">
+                <img src="assets/logo.png" alt="">
+                <h2 class="text-4xl">Dev<span class="font-extrabold">Board</span></h2>
+            </div>
+            <button class="bg-[#3752FD] px-5 py-3 font-medium text-white rounded-lg" onclick="goBackHome()">Back To Desk</button>
+        </nav>
+    </header>
+    <main class="w-10/12  mx-auto pb-8">
+        <div class="justify-items-center mb-4"><h2 class="font-bold text-2xl">Blogs</h2></div>
+        <!-- faq div container -->
+        <div class="space-y-5">
+            <div class="collapse bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-1" checked="checked" />
+                <div class="collapse-title font-semibold ">Question-1: What are the different ways to select an element in the DOM?</div>
+                <div class="collapse-content text-sm  opacity-75 font-medium">1.getElementById("id") <br>2.getElementByClassName("class") <br>3.getElementByTagName("tag") <br>4.quarySelector("selector") <br>5.quarySelectorAll("selector")</div>
+              </div>
+            <div class="collapse bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-1" checked="checked" />
+                <div class="collapse-title font-semibold ">Question-2: What is the difference between innerHTML, innerText, and textContent ?</div>
+                <div class="collapse-content text-sm  opacity-75 font-medium"><span class="font-extrabold">1.innerHTML</span> - Returns the HTML content inside the HTML tag <br><span class="font-extrabold">2.innerText</span> - Returns only the visible text inside an element <br><span class="font-extrabold">3.textContent</span> - Returns all text content inside an element including hidden text.</div>
+              </div>
+            <div class="collapse bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-1" checked="checked" />
+                <div class="collapse-title font-semibold ">Question-3: What is event delegation in the DOM?</div>
+                <div class="collapse-content text-sm  opacity-75 font-medium">Event delegation is a technique where you attach an event listener to a parent element instead of individual child elements.</div>
+              </div>
+            <div class="collapse bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-1" checked="checked" />
+                <div class="collapse-title font-semibold ">Question-4: What is event bubbling in the DOM?</div>
+                <div class="collapse-content text-sm  opacity-75 font-medium">Event bubbling is a mechanism where an event starts from the target element and moves upwards through its parent elements.Also Use <span class="font-extrabold">event.stopPropagation()</span> to prevent bubbling</div>
+              </div>
+            <div class="collapse bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-1" checked="checked" />
+                <div class="collapse-title font-semibold ">Question-5: How do you create, add, and remove elements using JavaScript?</div>
+                <div class="collapse-content text-sm  opacity-75 font-medium">1.To create an element, we use <span class="font-extrabold">document.createElement("tagName")</span> <br>2.To insert the element into the DOM, methods like <span class="font-extrabold">appendChild()</span> (adds at the end of a parent), <span class="font-extrabold">prepend()</span> (adds at the beginning), or <span class="font-extrabold">insertBefore()</span> (places it before another element) are used <br>3.Calling <span class="font-extrabold">element.remove()</span> directly removes an element from the DOM, while <span class="font-extrabold">parent.removeChild(childElement)</span> removes a specific child from its parent.</div>
+              </div>
+              
+        </div>
+    </main>
+
+    <!-- for Back to Desk button -->
+    <script>
+        function goBackHome(){
+            window.location.href = "index.html";
+        }
+      </script>
+</body>
+</html>
